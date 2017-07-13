@@ -330,7 +330,7 @@ int num[9][9];
 ```
 0是需要填的
 
-直接扔求解器http://shudu.admaimai.com/，答案似乎不唯一，但我点“计算区块唯一”再求解，得到的结果正好是flag
+直接扔求解器 http://shudu.admaimai.com/ ，答案似乎不唯一，但我点“计算区块唯一”再求解，得到的结果正好是flag
 
 flag{340089102508406930016207058060875349709064820854392006093650071170023604602740590}
 
@@ -498,7 +498,7 @@ trivial
 只需要构造一个信息与目标信息在模p-1的意义相同就好了。
 
 绝对是夜间放题加成，不然一堆大佬早就秒了
-```
+```python
 #!/usr/bin/python -i
 
 from pwn import *
@@ -905,7 +905,7 @@ libc静态编译+strip
 block crypto + matrix xor multiplication
 
 xor multiplication part: the string that need to be sent in function2(0x804a5a0) is trivially solvable:
-```
+```python
 [202L,
  211L,
  229L,
@@ -1190,7 +1190,7 @@ input ->native变换->java层check()校验
 check的逻辑有点类似于控制流混淆，更像是一个简单的解释器，特定的字符代表特定的读写操作。。用一个数组保存指令序列，之后每次执行一个代码片段。
 
 按照这个解释器的语法，这段代码大致是这个意思：
-```
+```C
 v0=108 
 empty[1]=v0; 
 v0=111 
